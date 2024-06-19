@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo do YouTube com Botão de Redirecionamento</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de rolagem ao redimensionar */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff6f61, #6a0572, #ffd166, #118ab2, #073b4c);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #fff;
+            text-align: center;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .content {
+            z-index: 1; /* Coloca o conteúdo na frente do vídeo */
+            text-align: center;
+            margin-bottom: 20px; /* Espaço abaixo do conteúdo */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            width: 640px; /* Largura do vídeo */
+            height: 360px; /* Altura do vídeo */
+            position: relative;
+            margin-top: 20px; /* Espaço acima do vídeo */
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .button-container {
+            margin-top: 20px; /* Espaço acima do botão */
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>tem umas das melhores musicas de intro de todos os animes</h1>
+        <p>alem que em 2023 ganhou o melhor premio de anime de romance </p>
+    </div>
+
+    <div class="video-container">
+        <!-- Substitua 'lTlzDfhPtFA' pelo ID do vídeo do YouTube -->
+        <iframe src="https://www.youtube.com/embed/lTlzDfhPtFA?autoplay=1&loop=1&controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="button-container">
+        <button onclick="window.location.href='sobre.html';">Ir para Outra Página</button>
+    </div>
+</body>
+</html>

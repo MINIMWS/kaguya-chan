@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaguya-sama: Love is War</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Background pastel */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333; /* Cor do texto principal */
+            position: relative; /* Para posicionamento absoluto do botão */
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #6a0572; /* Cor do título principal */
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .nota {
+            font-weight: bold;
+            color: #118ab2; /* Cor do destaque positivo */
+        }
+
+        .personagens {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .personagem {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff; /* Fundo branco */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .personagem h2 {
+            font-size: 2rem;
+            color: #6a0572; /* Cor do título do personagem */
+            margin-bottom: 10px;
+        }
+
+        .personagem p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333; /* Cor do texto do personagem */
+            margin-bottom: 10px;
+        }
+
+        .personagem img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-voltar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #6a0572;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-voltar:hover {
+            background-color: #4a0259;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Kaguya-sama: Love is War</h1>
+        <p><span class="nota">Kaguya-sama: Love is War</span> é um anime japonês baseado no mangá de comédia romântica escrito e ilustrado por Aka Akasaka. A história gira em torno de Kaguya Shinomiya e Miyuki Shirogane, membros do prestigioso conselho estudantil da Academia Shuchiin.</p>
+        <p>O anime é conhecido por seu humor inteligente e pelas batalhas psicológicas entre os dois personagens principais, que tentam fazer com que o outro confesse seu amor primeiro.</p>
+        <p>A primeira temporada do anime possui 12 episódios, explorando diferentes situações e estratégias elaboradas por Kaguya e Miyuki.</p>
+
+        <div class="personagens">
+            <div class="personagem">
+                <h2>Kaguya Shinomiya</h2>
+                <p>Kaguya é a vice-presidente do conselho estudantil, filha de uma família rica e extremamente inteligente. Ela é conhecida por sua beleza e por sua habilidade em estratégia.</p>
+                <img src="images.jpg" alt="Kaguya Shinomiya">
+            </div>
+            <div class="personagem">
+                <h2>Miyuki Shirogane</h2>
+                <p>Miyuki é o presidente do conselho estudantil, de origem humilde, mas com habilidades acadêmicas excepcionais. Ele é admirado por sua dedicação e inteligência.</p>
+                <img src="download (1).jpg" alt="Miyuki Shirogane">
+            </div>
+            <div class="personagem">
+                <h2>Chika Fujiwara</h2>
+                <p>Chika é a secretária do conselho estudantil, uma garota animada e alegre. Ela traz um alívio cômico à série com seu comportamento imprevisível.</p>
+                <img src="download.jpg" alt="Chika Fujiwara">
+            </div>
+        </div>
+
+        <button class="btn-voltar" onclick="window.location.href='timer.html'">Voltar</button>
+    </div>
+</body>
+</html>
